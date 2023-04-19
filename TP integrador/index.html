@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>tp integrador</title>
+    <script src="https://kit.fontawesome.com/676bf76e7d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Css/Estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+    <script src="JavaScript/formularios.js"></script>
+</head>
+
+<body>
+
+    <!-- BOTONERA HEADER -->
+    <header>
+        <a href="#" class="logo">
+            <img src="Imagenes/logo definitivo solo-PhotoRoom.png-PhotoRoom.png" alt="logo de la empresa">
+            <h1>HannaArtistic</h1>
+        </a>
+    </header>
+    <Section>
+        <!-- CONTACTO -->
+        <Section>
+            <div class="titulo">
+                <h2>Formulario de Contacto</h2>
+            </div>
+            <div class="container-form">
+                <form id="formularioContacto">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </Section>
+        <!-- COTIZACIÓN -->
+        <Section>
+            <div class="titulo">
+                <h2>Formulario de cotizacion</h2>
+            </div>
+            <div class="container-form">
+                <form id="formularioProceso" method="post">
+                    <label for="nombreProceso">Nombre</label>
+                    <input type="text" id="nombreProceso" name="nombreProceso">
+                    <label for="dni">DNI</label>
+                    <input type="number" id="dni" name="dni">
+                    <label for="cantidad">Cantidad</label>
+                    <input type="number" id="cantidad" name="cantidad">
+                    <label for="precio">Precio</label>
+                    <input type="number" id="precio" name="precio">
+                    <button type="submit">Confirmar</button>
+                </form>
+            </div>
+        </Section>
+    </Section>
+    <!-- PIE PAGINA -->
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="Imagenes/logo definitivo solo-PhotoRoom.png-PhotoRoom.png" alt="logo HannaArtistic">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>nosotros nos especializamos en la creacion de cuadros personalizados</p>
+                <p>creador de la pagina Facundo Carrasco</p>
+                <div></div>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2020 <b>HannaArtistic</b> - Todos los Derechos reservados</small>
+        </div>
+    </footer>
+</body>
+
+</html>
